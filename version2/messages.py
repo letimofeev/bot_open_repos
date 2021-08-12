@@ -235,7 +235,7 @@ class SQLMessages(IMessages):
         list
             Список групп
         """
-        return self.groups[int(course_name[0])]
+        return self.groups[int(course_name[0]) - 1]
 
     def get_var_num(self, var_num):
         return self.var_num_dict.get(var_num)
